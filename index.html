@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma app</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme_color" content="#bada55">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="modal">
+      <p>Are you sure?</p>
+      <button id="yes">Yes</button>
+    </div>
+  </div>
+  <h1>YAY APP</h1>
+  <div class="timer">
+    <div class="item">
+      <span id="hours">00</span>
+      <p>Hours</p>
+    </div>
+    <div class="item">
+      <span id="minutes">00</span>
+      <p>Minutes</p>
+    </div>
+    <div class="item">
+      <span id="seconds">00</span>
+      <p>Seconds</p>
+    </div>
+  </div>
+  <button id="verify">Verify</button>
+
+
+</body>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+  }
+</script>
+<script src="./script.js"></script>
+
+</html>

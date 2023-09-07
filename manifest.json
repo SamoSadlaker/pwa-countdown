@@ -1,0 +1,20 @@
+{
+  "name": "My app",
+  "short_name": "Best app",
+  "start_url": "https://test.samo",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#bada55",
+  "icons": [
+    {
+      "src": "/icons/icon-36.png",
+      "type": "image/png",
+      "sizes": "45x45"
+    },
+    {
+      "src": "/icons/icon-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
+}
